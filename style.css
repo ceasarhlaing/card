@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--main-bg: hsl(217, 54%, 11%);
+--card-bg: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 450px;
+    background-color: var(--card-bg);
+    color: var(--soft-blue);
+    padding: 25px 25px;
+    border-radius: 2%;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.container h2 {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 22px;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+}
+
+.container h2:hover {
+    color: var(--cyan);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+}
+
+
+.values {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 15px 0;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+}
+
+.price, .clock {
+    display: flex;
+    align-items: center;
+}
+
+.price img, .clock img {
+    margin-right: 5px;
+}
+
+.price:first-child {
+    color: var(--cyan);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 50px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    margin: 10px 10px 0 0;
+}
+
+.author span {
+    color: var(--white);
+}
+
+.author span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.img-overlay {
+    background-color: var(--cyan);
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 25px;
+    left: 25px;
+    border-radius: 2%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-overlay:hover {
+    opacity: 0.6;
+    transition: 500ms;
+}
